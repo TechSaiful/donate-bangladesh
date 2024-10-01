@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Tech Saiful</title>
+
+    <!-- tailwind CSS & daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <main>
+        <!-- header section starts -->
+        <div class="bg-[#F9F7F3] pb-8 pt-5">
+            <div class="w-10/12 mx-auto">
+                <div class="navbar">
+                    <div class="navbar-start">
+                        <button id="return_home_btn" class="bg-[#b4f461] text-black py-2 px-6 rounded-md font-bold">Home</button>
+                    </div>
+                    <div class="navbar-center">
+                        <div class="flex gap-2 items-center">
+                            <img class="h-8 w-8" src="images/logo.png" alt="">
+                            <h2 class="text-black font-bold">Donate Bangladesh</h2>
+                        </div>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="flex items-center"></div>
+                        <img class="h-8 w-8" src="images/coin.png" alt="">
+                        <h2 class="px-1 font-bold text-black">5500</h2>
+                        <h2 class="text-black font-bold">BDT</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header section ends here -->
+
+        <!-- FAQ section starts -->
+        <div class="faq bg-white">
+            <div class="w-10/12 mx-auto">
+                <h2 class="text-5xl text-black font-bold py-8">Important FAQ</h2>
+                <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border">
+                        <input type="radio" name="my-accordion-4" checked="checked" />
+                        <div class="collapse-title text-xl font-medium text-black">Click to open this one and close others</div>
+                        <div class="collapse-content">
+                            <p class="text-gray-700">hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium text-black">Click to open this one and close others</div>
+                        <div class="collapse-content">
+                            <p class="text-gray-700">hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium text-black">Click to open this one and close others</div>
+                        <div class="collapse-content">
+                            <p class="text-gray-700">hello</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script>
+        document.getElementById('return_home_btn').addEventListener('click', function(){
+            window.location.href = 'index.html';
+        })
+    </script>
+
+</body>
+</html>

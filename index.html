@@ -19,9 +19,10 @@
         <!-- header section starts -->
         <div class="bg-[#F9F7F3] pb-8 pt-5">
             <div class="w-10/12 mx-auto">
+                <!-- navigation menu -->
                 <div class="navbar">
                     <div class="navbar-start">
-                        <button class="bg-[#b4f461] text-black py-2 px-6 rounded-md font-bold">Blog</button>
+                        <button id="return_blog_btn" class="bg-[#b4f461] text-black py-2 px-6 rounded-md font-bold">Blog</button>
                     </div>
                     <div class="navbar-center">
                         <div class="flex gap-2 items-center">
@@ -139,6 +140,12 @@
 
 
 
+
+    <script>
+        document.getElementById('return_blog_btn').addEventListener('click', function(){
+            window.location.href = 'blog.html';
+        })
+    </script>
 
 </body>
 
