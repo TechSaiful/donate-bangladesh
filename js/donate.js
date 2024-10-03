@@ -44,4 +44,29 @@ document.getElementById('donate_submit_btn').addEventListener('click', function(
 })
 
 
+// History section
+
+document.getElementById('donate_submit_btn').addEventListener('click', function(){
+    let donateAmmount = parseFloat(document.getElementById('donate_ammount_input').value);
+    if( !isNaN(donateAmmount) && donateAmmount > 0 ){
+        let donateTitle = document.getElementById('donate_title').innerText;
+        let h = document.createElement('h2');
+        let p = document.createElement('p');
+        let li = document.createElement('li');
+        li.classList.add('border', 'rounded-md', 'my-4', 'p-4');
+        h.classList.add('text-lg', 'text-black', 'font-bold', 'capitalize');
+        p.classList.add('text-sm', 'text-gray-900');
+    
+        h.innerText = ` ${donateAmmount} is donated for ${donateTitle} `;
+        p.innerText = 'date:' + new Date();
+    
+        li.appendChild(h);
+        li.appendChild(p);
+    
+        document.getElementById('history_card').appendChild(li);
+    }
+
+})
+
+
 
