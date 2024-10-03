@@ -34,7 +34,7 @@
                     <div class="navbar-end">
                         <div class="flex items-center"></div>
                         <img class="h-8 w-8" src="images/coin.png" alt="">
-                        <h2 class="px-1 font-bold text-black">5500</h2>
+                        <h2 id="account_balance" class="px-1 font-bold text-black">5500</h2>
                         <h2 class="text-black font-bold">BDT</h2>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                             <div>
                                 <div class="flex gap-1 bg-gray-100 w-max p-2 text-sm items-center rounded-md">
                                     <img class="h-5 w-5" src="images/coin.png" alt="">
-                                    <h2 class="px-1 font-bold text-black">0</h2>
+                                    <h2 id="total_donate_ammount" class="px-1 font-bold text-black">0</h2>
                                     <h2 class="text-black font-bold">BDT</h2>
                                 </div>
                                 <h1 class="text-lg text-black font-bold">Donate for Flood at Rangpur, Bangladesh</h1>
@@ -76,11 +76,8 @@
                                     on the lives of those in need.
                                 </p>
                                 <div class="flex flex-col gap-4">
-                                    <input type="text" placeholder="Write Donation Amount"
-                                        class="input input-bordered bg-transparent text-black w-full max-w-lg" />
-                                    <button
-                                        class="btn bg-[#b4f461] text-black font-bold max-w-lg hover:bg-lime-500">Donate
-                                        Now</button>
+                                    <input id="donate_ammount_input" type="text" placeholder="Write Donation Amount" class="input input-bordered bg-transparent text-black w-full max-w-lg" />
+                                    <button id="donate_submit_btn" class="btn bg-[#b4f461] text-black font-bold max-w-lg hover:bg-lime-500">Donate Now</button>
                                 </div>
                             </div>
                         </div>

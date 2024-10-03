@@ -22,3 +22,26 @@ document.getElementById('history_btn').addEventListener('click', function(){
     document.getElementById('history_btn').style.fontWeight = '700';
     document.getElementById('donation_btn').style.removeProperty('font-weight');
 })
+
+
+// donate ammount function
+document.getElementById('donate_submit_btn').addEventListener('click', function(){
+    let donateAmmount = parseFloat(document.getElementById('donate_ammount_input').value);
+    if( !isNaN(donateAmmount) && donateAmmount > 0 ){
+        // donate ammount add to the found
+        let totalDonateAmmount = parseFloat(document.getElementById('total_donate_ammount').innerText);
+        let updateAmmount = donateAmmount + totalDonateAmmount;
+        document.getElementById('total_donate_ammount').innerText = updateAmmount;
+
+        // ammount - form main balance
+        let accountBalance = parseFloat(document.getElementById('account_balance').innerText);
+        let updateAccountBalance = accountBalance - donateAmmount; 
+        document.getElementById('account_balance').innerText = updateAccountBalance;
+    }
+    else{
+        alert('Invalid donation amount. Please enter a valid number.');
+    }
+})
+
+
+
