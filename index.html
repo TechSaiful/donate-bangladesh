@@ -17,41 +17,42 @@
     <main class="bg-white">
 
         <!-- header section starts -->
-        <div class="bg-[#F9F7F3] pb-8 pt-5">
-            <div class="w-10/12 mx-auto">
-                <!-- navigation menu -->
-                <div class="navbar">
-                    <div class="navbar-start">
-                        <button id="return_blog_btn"
-                            class="bg-[#b4f461] text-black py-2 px-6 rounded-md font-bold">Blog</button>
-                    </div>
-                    <div class="navbar-center">
-                        <div class="flex gap-2 items-center">
-                            <img class="h-8 w-8" src="images/logo.png" alt="">
-                            <h2 class="text-black font-bold">Donate Bangladesh</h2>
+        <div id="main_header" class="sticky top-0 z-[1000]">
+            <div id="nav_header_main" class=" bg-[#F9F7F3] pb-5 pt-5">
+                <div class="w-10/12 mx-auto">
+                    <!-- navigation menu -->
+                    <div class="navbar">
+                        <div class="navbar-start">
+                            <button id="return_blog_btn"
+                                class="bg-[#b4f461] text-black py-2 px-6 rounded-md font-bold">Blog</button>
                         </div>
-                    </div>
-                    <div class="navbar-end">
-                        <div class="flex items-center"></div>
-                        <img class="h-8 w-8" src="images/coin.png" alt="">
-                        <h2 id="account_balance" class="px-1 font-bold text-black">5500</h2>
-                        <h2 class="text-black font-bold">BDT</h2>
+                        <div class="navbar-center">
+                            <div class="flex gap-2 items-center">
+                                <img class="h-8 w-8" src="images/logo.png" alt="">
+                                <h2 class="text-black font-bold">Donate Bangladesh</h2>
+                            </div>
+                        </div>
+                        <div class="navbar-end">
+                            <div class="flex items-center"></div>
+                            <img class="h-8 w-8" src="images/coin.png" alt="">
+                            <h2 id="account_balance" class="px-1 font-bold text-black">5500</h2>
+                            <h2 class="text-black font-bold">BDT</h2>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- button -->
-        <div class="flex justify-center gap-6 mt-16">
-            <button id="donation_btn"
-                class="py-2 px-6 border border-gray-500 rounded-md text-black">Donation</button>
-            <button id="history_btn"
-                class="py-2 px-6 border border-gray-500 rounded-md text-black">History</button>
+            <!-- button -->
+            <div id="header_btn_main" class="flex justify-center gap-6 py-12 bg-white">
+                <button id="donation_btn"
+                    class="py-2 px-6 border border-gray-500 rounded-md text-black">Donation</button>
+                <button id="history_btn" class="py-2 px-6 border border-gray-500 rounded-md text-black">History</button>
+            </div>
         </div>
         <!-- header section ends here -->
 
 
         <!-- donation section -->
-        <div class="bg-white py-12">
+        <div class="bg-white pb-12 pt-6">
             <div class="w-10/12 mx-auto">
 
                 <!-- donation section -->
@@ -66,7 +67,8 @@
                                     <h2 id="total_donate_ammount" class="px-1 font-bold text-black">0</h2>
                                     <h2 class="text-black font-bold">BDT</h2>
                                 </div>
-                                <h1 id="donate_title" class="text-lg text-black font-bold">Donate for Flood at Rangpur, Bangladesh</h1>
+                                <h1 id="donate_title" class="text-lg text-black font-bold">Donate for Flood at Rangpur,
+                                    Bangladesh</h1>
                                 <p class="py-6 text-slate-500 text-sm"> The recent floods in Noakhali have caused
                                     significant damage to homes infrastructure. Your donation will help provide
                                     essential

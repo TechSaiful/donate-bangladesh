@@ -64,9 +64,22 @@ document.getElementById('donate_submit_btn').addEventListener('click', function(
         li.appendChild(p);
     
         document.getElementById('history_card').appendChild(li);
+        // Clear the input field after submission
+        document.getElementById('donate_ammount_input').value = '';
     }
 
 })
 
 
+// blur if the page has been scrolled down
+let headerBtn = document.getElementById('header_btn_main');
+let navHeaderMain = document.getElementById('nav_header_main');
+let mainHeader = document.getElementById('main_header');
+window.addEventListener('scroll', function(){
+    if(window.scrollY > 20){
+        headerBtn.classList.remove('bg-white');
+        navHeaderMain.classList.remove('bg-[#F9F7F3]');
+        mainHeader.classList.add('backdrop-blur-3xl', 'bg-white/50');
+    }
+})
 
