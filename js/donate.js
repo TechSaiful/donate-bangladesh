@@ -37,6 +37,8 @@ document.getElementById('donate_submit_btn').addEventListener('click', function(
         let accountBalance = parseFloat(document.getElementById('account_balance').innerText);
         let updateAccountBalance = accountBalance - donateAmmount; 
         document.getElementById('account_balance').innerText = updateAccountBalance;
+        document.getElementById('my_modal_1').showModal();
+
     }
     else{
         alert('Invalid donation amount. Please enter a valid number.');

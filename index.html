@@ -21,18 +21,18 @@
             <div id="nav_header_main" class=" bg-[#F9F7F3] pb-5 pt-5">
                 <div class="w-10/12 mx-auto">
                     <!-- navigation menu -->
-                    <div class="navbar">
-                        <div class="navbar-start">
+                    <div class="navbar grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="navbar-start w-full justify-center md:justify-start">
                             <button id="return_blog_btn"
                                 class="bg-[#b4f461] text-black py-2 px-6 rounded-md font-bold">Blog</button>
                         </div>
-                        <div class="navbar-center">
+                        <div class="navbar-center flex justify-center">
                             <div class="flex gap-2 items-center">
                                 <img class="h-8 w-8" src="images/logo.png" alt="">
                                 <h2 class="text-black font-bold">Donate Bangladesh</h2>
                             </div>
                         </div>
-                        <div class="navbar-end">
+                        <div class="navbar-end w-full flex md:justify-end justify-center">
                             <div class="flex items-center"></div>
                             <img class="h-8 w-8" src="images/coin.png" alt="">
                             <h2 id="account_balance" class="px-1 font-bold text-black">5500</h2>
@@ -48,7 +48,23 @@
                 <button id="history_btn" class="py-2 px-6 border border-gray-500 rounded-md text-black">History</button>
             </div>
         </div>
+        
         <!-- header section ends here -->
+
+
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="my_modal_1" class="modal">
+            <div class="modal-box">
+                <h3 class="text-lg font-bold">Hello!</h3>
+                <p class="py-4">Press ESC key or click the button below to close</p>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
 
 
         <!-- donation section -->
