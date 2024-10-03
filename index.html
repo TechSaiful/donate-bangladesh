@@ -18,10 +18,10 @@
 
         <!-- header section starts -->
         <div id="main_header" class="sticky top-0 z-[1000]">
-            <div id="nav_header_main" class=" bg-[#F9F7F3] pb-5 pt-5">
+            <div id="nav_header_main" class=" bg-[#F9F7F3] pb-0 md:pb-5 pt-5">
                 <div class="w-10/12 mx-auto">
                     <!-- navigation menu -->
-                    <div class="navbar grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="navbar grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4">
                         <div class="navbar-start w-full justify-center md:justify-start">
                             <button id="return_blog_btn"
                                 class="bg-[#b4f461] text-black py-2 px-6 rounded-md font-bold">Blog</button>
@@ -42,7 +42,7 @@
                 </div>
             </div>
             <!-- button -->
-            <div id="header_btn_main" class="flex justify-center gap-6 py-12 bg-white">
+            <div id="header_btn_main" class="flex justify-center gap-6 pt-0 pb-6 md:py-12 bg-white">
                 <button id="donation_btn"
                     class="py-2 px-6 border border-gray-500 rounded-md text-black">Donation</button>
                 <button id="history_btn" class="py-2 px-6 border border-gray-500 rounded-md text-black">History</button>
@@ -68,15 +68,16 @@
 
 
         <!-- donation section -->
-        <div class="bg-white pb-12 pt-6">
+        <div class="bg-white pb-12 pt-1 md:pt-6">
             <div class="w-10/12 mx-auto">
 
                 <!-- donation section -->
                 <div id="donation_section">
+
                     <!-- donate section 1 -->
                     <div class="hero border border-gray-200 mt-8 rounded-lg">
-                        <div class="hero-content grid grid-cols-2">
-                            <img src="images/rangpur flood situation.jpg" class=" rounded-lg" />
+                        <div class="hero-content grid grid-cols-1 md:grid-cols-2">
+                            <img src="images/rangpur flood situation.jpg" class="rounded-lg" />
                             <div>
                                 <div class="flex gap-1 bg-gray-100 w-max p-2 text-sm items-center rounded-md">
                                     <img class="h-5 w-5" src="images/coin.png" alt="">
@@ -107,7 +108,7 @@
 
                     <!-- donate section 2 -->
                     <div class="hero border border-gray-200 mt-8 rounded-lg">
-                        <div class="hero-content grid grid-cols-2">
+                        <div class="hero-content grid grid-cols-1 md:grid-cols-2">
                             <img src="images/rangpur flood situation.jpg" class=" rounded-lg" />
                             <div>
                                 <div class="flex gap-1 bg-gray-100 w-max p-2 text-sm items-center rounded-md">
@@ -136,7 +137,7 @@
 
                     <!-- donate section 3 -->
                     <div class="hero border border-gray-200 mt-8 rounded-lg">
-                        <div class="hero-content grid grid-cols-2">
+                        <div class="hero-content grid grid-cols-1 md:grid-cols-2">
                             <img src="images/quota injuried.jpg" class=" rounded-lg" />
                             <div>
                                 <div class="flex gap-1 bg-gray-100 w-max p-2 text-sm items-center rounded-md">
@@ -164,10 +165,11 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
 
                 <!-- history section -->
-                <div id="history_section" class="w-8/12 mx-auto mt-20">
+                <div id="history_section" class="w-full md:w-8/12 mx-auto mt-20">
                     <ul id="history_card">
                         <li class="border rounded-md my-4 p-4">
                             <h2 class="text-lg text-black font-bold capitalize">donate for flood people</h2>
